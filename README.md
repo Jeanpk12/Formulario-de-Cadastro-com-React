@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Projeto de Cadastro com React
+![image](https://github.com/Jeanpk12/Formulario-de-Cadastro-com-React/assets/122842874/56025957-cbdf-4cf4-a7d8-ed057b9106b0)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição do Projeto
 
-## Available Scripts
+Este projeto em React consiste em um formulário de cadastro simples que coleta informações como nome, telefone e e-mail. O objetivo é permitir que os usuários se cadastrem para receber informações ou acessar algum serviço.
 
-In the project directory, you can run:
+## Funcionalidades
 
-### `npm start`
+### Validação de Entradas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+O código inclui validações para garantir que as informações inseridas pelos usuários sejam corretas.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Nome:** Verifica se foi inserido um nome e se não contém números.
+- **Telefone:** Garante que um número de telefone seja inserido corretamente.
+- **E-mail:** Verifica se um e-mail válido foi fornecido.
 
-### `npm test`
+### Feedback ao Usuário
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Utiliza a biblioteca react-toastify para exibir mensagens de erro ou sucesso ao usuário.
 
-### `npm run build`
+### Bloqueio do Botão de Cadastro
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+O botão de cadastro é desabilitado após um envio bem-sucedido, impedindo envios duplicados.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Estrutura do Projeto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Styles.css:** Arquivo de estilo para o componente.
+- **Images:** Pasta contendo a ilustração utilizada no projeto.
+- **App.js:** Componente principal que contém o formulário e a lógica associada.
 
-### `npm run eject`
+## Como Usar
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clone o repositório.
+2. Instale as dependências usando `npm install`.
+3. Execute o projeto usando `npm start`.
+4. Preencha o formulário e clique em "Cadastrar-se" para testar as funcionalidades.
